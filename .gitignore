@@ -9,3 +9,5 @@ profile
 .sublime-project
 .sublime-workspace
 
+#ignore node_modules
+node_modules
