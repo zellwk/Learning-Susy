@@ -1,2 +1,15 @@
 @import "normalize";
 @import "susy";
+
+$susy:(
+  columns: 4, 
+  debug: (image: show), 
+  global-box-sizing: border-box
+  );
+
+@include border-box-sizing;
+
+.wrap {
+  @include container();
+  height: 100vh;
+}
