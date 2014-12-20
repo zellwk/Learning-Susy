@@ -14,3 +14,26 @@ $susy:(
   @include container();
   height: 100vh;
 }
+
+
+// ==========
+// Taking Care of CSS 
+// ==========
+
+.content {
+  margin-top: 10vh;
+  height: 80vh;
+  background: rgba(113, 218, 210, 0.8);
+}
+
+.sidebar {
+  margin-top: 10vh;
+  height: 40vh;
+  background: rgba(250, 231, 179, 0.8);
+}
+
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
