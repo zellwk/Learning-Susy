@@ -14,7 +14,17 @@ $susy:(
   @include container();
   height: 100vh;
 }
+// ==========
+// Susy Layouts
+// ==========
 
+.content {
+  @include span(3 of 4);
+}
+
+.sidebar {
+  @include span(1 of 4 last);
+}
 
 // ==========
 // Taking Care of CSS 

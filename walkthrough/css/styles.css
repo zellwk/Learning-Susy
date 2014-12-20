@@ -440,21 +440,35 @@ table {
   clear: both;
 }
 
-/* line 23, ../scss/styles.scss */
+/* line 21, ../scss/styles.scss */
+.content {
+  width: 73.68421%;
+  float: left;
+  margin-right: 5.26316%;
+}
+
+/* line 25, ../scss/styles.scss */
+.sidebar {
+  width: 21.05263%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 33, ../scss/styles.scss */
 .content {
   margin-top: 10vh;
   height: 80vh;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 29, ../scss/styles.scss */
+/* line 39, ../scss/styles.scss */
 .sidebar {
   margin-top: 10vh;
   height: 40vh;
   background: rgba(250, 231, 179, 0.8);
 }
 
-/* line 35, ../scss/styles.scss */
+/* line 45, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
