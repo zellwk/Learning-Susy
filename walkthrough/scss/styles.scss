@@ -1,12 +1,15 @@
 @import "normalize";
 @import "susy";
 
-$susy: (
-  columns: 16,
-  container: 1140px,
-  global-box-sizing: border-box,
-  debug: (image: show), 
-  );
+@mixin cf {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+$susy: (columns: 16, container: 1140px, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
@@ -15,7 +18,7 @@ $susy: (
 // ==========
 
 .wrap {
-  @include container();
+  @include container;
 }
 
 .logo {
@@ -26,7 +29,6 @@ $susy: (
 
 nav {
   float: right;
-
   li {
     list-style: none;
     float: left;
@@ -34,6 +36,15 @@ nav {
     line-height: 2rem;
   }
 }
+
+.content {
+  @include span(12 of 16);
+}
+
+.sidebar {
+  @include span(4 of 16 last);
+}
+
 
 // ==========
 // Taking Care of CSS 
@@ -50,12 +61,16 @@ ul, ol {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.site-header,.site-footer {
+.site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
@@ -76,16 +91,11 @@ img {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
-
-  li {
-    list-style: none;
-
-    a {
-      color: #666;
-      padding-left: 1rem;
-      line-height: 2;
-      text-decoration: none;
-    }
+  a {
+    color: #666;
+    padding-left: 1rem;
+    line-height: 2;
+    text-decoration: none;
   }
 }
 

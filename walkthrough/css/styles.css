@@ -421,7 +421,7 @@ table {
   box-sizing: border-box;
 }
 
-/* line 17, ../scss/styles.scss */
+/* line 20, ../scss/styles.scss */
 .wrap {
   max-width: 1140px;
   margin-left: auto;
@@ -439,18 +439,18 @@ table {
   clear: both;
 }
 
-/* line 21, ../scss/styles.scss */
+/* line 24, ../scss/styles.scss */
 .logo {
   float: left;
   line-height: 2rem;
   font-size: 1.5rem;
 }
 
-/* line 27, ../scss/styles.scss */
+/* line 30, ../scss/styles.scss */
 nav {
   float: right;
 }
-/* line 30, ../scss/styles.scss */
+/* line 32, ../scss/styles.scss */
 nav li {
   list-style: none;
   float: left;
@@ -458,67 +458,82 @@ nav li {
   line-height: 2rem;
 }
 
-/* line 42, ../scss/styles.scss */
+/* line 40, ../scss/styles.scss */
+.content {
+  width: 74.68354%;
+  float: left;
+  margin-right: 1.26582%;
+}
+
+/* line 44, ../scss/styles.scss */
+.sidebar {
+  width: 24.05063%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 53, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 48, ../scss/styles.scss */
+/* line 59, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 53, ../scss/styles.scss */
+/* line 64, ../scss/styles.scss */
+li {
+  list-style: none;
+}
+
+/* line 68, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 58, ../scss/styles.scss */
+/* line 73, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 63, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 69, ../scss/styles.scss */
+/* line 84, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 75, ../scss/styles.scss */
+/* line 90, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 80, ../scss/styles.scss */
-.sidebar li {
-  list-style: none;
-}
-/* line 83, ../scss/styles.scss */
-.sidebar li a {
+/* line 94, ../scss/styles.scss */
+.sidebar a {
   color: #666;
   padding-left: 1rem;
   line-height: 2;
   text-decoration: none;
 }
 
-/* line 92, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 96, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }
