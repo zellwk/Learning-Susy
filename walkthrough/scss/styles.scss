@@ -63,13 +63,16 @@ nav {
   // padding: 0 span(1 of 12) + gutter(12);
 }
 
-.gallery__item {
-  @include span(2 of 10);
-  margin-bottom: gutter(10);
-  &:nth-child(5n) {
-    @include last;
+@include nested(10) {
+  .gallery__item {
+    @include span(2);
+    margin-bottom: gutter();
+    &:nth-child(5n) {
+      @include last;
+    }
   }
 }
+
 
 // ==========
 // Taking Care of CSS 
