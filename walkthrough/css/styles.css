@@ -472,55 +472,69 @@ nav li {
   margin-right: 0;
 }
 
-/* line 53, ../scss/styles.scss */
+/* line 48, ../scss/styles.scss */
+.gallery {
+  background: #c8c802;
+  width: 83.05085%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 5, ../scss/styles.scss */
+.gallery:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 65, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 59, ../scss/styles.scss */
+/* line 71, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 64, ../scss/styles.scss */
+/* line 76, ../scss/styles.scss */
 li {
   list-style: none;
 }
 
-/* line 68, ../scss/styles.scss */
+/* line 80, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 73, ../scss/styles.scss */
+/* line 85, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 78, ../scss/styles.scss */
+/* line 90, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 84, ../scss/styles.scss */
+/* line 96, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 90, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 94, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 .sidebar a {
   color: #666;
   padding-left: 1rem;
@@ -528,12 +542,12 @@ img {
   text-decoration: none;
 }
 
-/* line 102, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 106, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }
