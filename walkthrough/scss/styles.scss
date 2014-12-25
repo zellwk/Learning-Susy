@@ -49,13 +49,23 @@ nav {
   @include cf;
   background: rgb(200, 200, 2);
   // Method 1 
-  width: span(10 of 12);
-  margin-left: auto;
-  margin-right: auto;
-
+  // width: span(10 of 12);
+  // margin-left: auto;
+  // margin-right: auto;
   // Or alternatively: 
   // margin-left: span(1 wide of 12);
   // margin-left: span(1 of 12) + gutter(12)
+}
+
+// Method 2
+.gallery {
+  padding: 0 span(1 wide of 12);
+  // OR 
+  // padding: 0 span(1 of 12) + gutter(12);
+}
+
+.gallery__item {
+  background: rgba(255, 20, 20, 0.8);
 }
 
 // ==========
