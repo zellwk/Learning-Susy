@@ -47,7 +47,6 @@ nav {
 
 .gallery {
   @include cf;
-  background: rgb(200, 200, 2);
   // Method 1 
   // width: span(10 of 12);
   // margin-left: auto;
@@ -65,7 +64,11 @@ nav {
 }
 
 .gallery__item {
-  background: rgba(255, 20, 20, 0.8);
+  @include span(2 of 10);
+  margin-bottom: gutter(10);
+  &:nth-child(5n) {
+    @include last;
+  }
 }
 
 // ==========

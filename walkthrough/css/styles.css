@@ -472,10 +472,6 @@ nav li {
   margin-right: 0;
 }
 
-/* line 48, ../scss/styles.scss */
-.gallery {
-  background: #c8c802;
-}
 /* line 5, ../scss/styles.scss */
 .gallery:after {
   content: "";
@@ -483,65 +479,73 @@ nav li {
   display: table;
 }
 
-/* line 61, ../scss/styles.scss */
+/* line 60, ../scss/styles.scss */
 .gallery {
   padding: 0 8.47458%;
 }
 
-/* line 67, ../scss/styles.scss */
+/* line 66, ../scss/styles.scss */
 .gallery__item {
-  background: rgba(255, 20, 20, 0.8);
+  width: 18.36735%;
+  float: left;
+  margin-right: 2.04082%;
+  margin-bottom: 2.04082%;
+}
+/* line 69, ../scss/styles.scss */
+.gallery__item:nth-child(5n) {
+  float: right;
+  margin-right: 0;
 }
 
-/* line 75, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 81, ../scss/styles.scss */
+/* line 84, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 86, ../scss/styles.scss */
+/* line 89, ../scss/styles.scss */
 li {
   list-style: none;
 }
 
-/* line 90, ../scss/styles.scss */
+/* line 93, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 95, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 100, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 106, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 112, ../scss/styles.scss */
+/* line 115, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 116, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 .sidebar a {
   color: #666;
   padding-left: 1rem;
@@ -549,12 +553,12 @@ img {
   text-decoration: none;
 }
 
-/* line 124, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 128, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }
