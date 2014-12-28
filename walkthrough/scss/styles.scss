@@ -56,11 +56,15 @@ nav {
 }
 
 .content {
-  @include span(12);
+  @include susy-breakpoint($desktop, 16) {
+    @include span(12);
+  }
 }
 
 .sidebar {
-  @include span(4 last);
+  @include susy-breakpoint($desktop, 16) {
+    @include span(4 last);
+  }
 }
 
 .gallery {

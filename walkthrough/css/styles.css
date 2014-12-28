@@ -480,18 +480,22 @@ nav li {
   line-height: 2rem;
 }
 
-/* line 58, ../scss/styles.scss */
-.content {
-  width: 151.28205%;
-  float: left;
-  margin-right: 2.5641%;
+@media (min-width: 980px) {
+  /* line 58, ../scss/styles.scss */
+  .content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+  }
 }
 
-/* line 62, ../scss/styles.scss */
-.sidebar {
-  width: 48.71795%;
-  float: right;
-  margin-right: 0;
+@media (min-width: 980px) {
+  /* line 64, ../scss/styles.scss */
+  .sidebar {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+  }
 }
 
 /* line 6, ../scss/styles.scss */
@@ -501,73 +505,73 @@ nav li {
   display: table;
 }
 
-/* line 78, ../scss/styles.scss */
+/* line 82, ../scss/styles.scss */
 .gallery {
   padding: 0 8.47458%;
 }
 
-/* line 85, ../scss/styles.scss */
+/* line 89, ../scss/styles.scss */
 .gallery__item {
   width: 18.36735%;
   float: left;
   margin-right: 2.04082%;
   margin-bottom: 2.04082%;
 }
-/* line 88, ../scss/styles.scss */
+/* line 92, ../scss/styles.scss */
 .gallery__item:nth-child(5n) {
   float: right;
   margin-right: 0;
 }
 
-/* line 99, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 105, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 110, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 li {
   list-style: none;
 }
 
-/* line 114, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 119, ../scss/styles.scss */
+/* line 123, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 124, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 130, ../scss/styles.scss */
+/* line 134, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 136, ../scss/styles.scss */
+/* line 140, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 140, ../scss/styles.scss */
+/* line 144, ../scss/styles.scss */
 .sidebar a {
   color: #666;
   padding-left: 1rem;
@@ -575,12 +579,12 @@ img {
   text-decoration: none;
 }
 
-/* line 148, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 152, ../scss/styles.scss */
+/* line 156, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }
