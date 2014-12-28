@@ -504,74 +504,105 @@ nav li {
   clear: both;
   display: table;
 }
-
-/* line 82, ../scss/styles.scss */
-.gallery {
-  padding: 0 8.47458%;
+@media (min-width: 980px) {
+  /* line 70, ../scss/styles.scss */
+  .gallery {
+    padding: 0 8.47458%;
+  }
 }
 
-/* line 89, ../scss/styles.scss */
-.gallery__item {
-  width: 18.36735%;
-  float: left;
-  margin-right: 2.04082%;
-  margin-bottom: 2.04082%;
+@media (max-width: 600px) {
+  /* line 88, ../scss/styles.scss */
+  .gallery__item {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%;
+    margin-bottom: 2.5641%;
+  }
+  /* line 93, ../scss/styles.scss */
+  .gallery__item:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+  }
 }
-/* line 92, ../scss/styles.scss */
-.gallery__item:nth-child(5n) {
-  float: right;
-  margin-right: 0;
+@media (min-width: 600px) and (max-width: 980px) {
+  /* line 88, ../scss/styles.scss */
+  .gallery__item {
+    width: 31.81818%;
+    float: left;
+    margin-right: 2.27273%;
+    margin-bottom: 2.27273%;
+  }
+  /* line 102, ../scss/styles.scss */
+  .gallery__item:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+  /* line 88, ../scss/styles.scss */
+  .gallery__item {
+    width: 18.36735%;
+    float: left;
+    margin-right: 2.04082%;
+    margin-bottom: 2.04082%;
+  }
+  /* line 111, ../scss/styles.scss */
+  .gallery__item:nth-child(5n) {
+    float: right;
+    margin-right: 0;
+  }
 }
 
-/* line 103, ../scss/styles.scss */
+/* line 121, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 109, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 114, ../scss/styles.scss */
+/* line 132, ../scss/styles.scss */
 li {
   list-style: none;
 }
 
-/* line 118, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 123, ../scss/styles.scss */
+/* line 141, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 128, ../scss/styles.scss */
+/* line 146, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 134, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 140, ../scss/styles.scss */
+/* line 158, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 144, ../scss/styles.scss */
+/* line 162, ../scss/styles.scss */
 .sidebar a {
   color: #666;
   padding-left: 1rem;
@@ -579,12 +610,12 @@ img {
   text-decoration: none;
 }
 
-/* line 152, ../scss/styles.scss */
+/* line 170, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 156, ../scss/styles.scss */
+/* line 174, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }

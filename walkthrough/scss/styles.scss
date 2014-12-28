@@ -69,24 +69,43 @@ nav {
 
 .gallery {
   @include cf;
-  // Method 1 
-  // width: span(10 of 12);
-  // margin-left: auto;
-  // margin-right: auto;
-  // Or alternatively: 
-  // margin-left: span(1 wide of 12);
-  // margin-left: span(1 of 12) + gutter(12)
+  @include susy-breakpoint($desktop, 12) {
+    // Method 1 
+    // width: span(10 of 12);
+    // margin-left: auto;
+    // margin-right: auto;
+    // Or alternatively: 
+    // margin-left: span(1 wide of 12);
+    // margin-left: span(1 of 12) + gutter(12)
+    // 
+    // Method 2
+    padding: 0 span(1 wide of 12);
+    // OR 
+    // padding: 0 span(1 of 12) + gutter(12);
+  }
 }
 
-// Method 2
-.gallery {
-  padding: 0 span(1 wide of 12);
-  // OR 
-  // padding: 0 span(1 of 12) + gutter(12);
-}
+.gallery__item {
+  // Constrain span to only mobile
+  @include susy-breakpoint(max-width $tablet, 8) {
+    @include span(4);
+    margin-bottom: gutter();
+    &:nth-child(2n) {
+      @include last;
+    }
+  }
 
-@include nested(10) {
-  .gallery__item {
+  // Constrain span to only tablet
+  @include susy-breakpoint($tablet $desktop, 9) {
+    @include span(3);
+    margin-bottom: gutter();
+    &:nth-child(3n) {
+      @include last;
+    }
+  }
+
+  // Constrain span to only desktop
+  @include susy-breakpoint($desktop, 10) {
     @include span(2);
     margin-bottom: gutter();
     &:nth-child(5n) {
@@ -94,7 +113,6 @@ nav {
     }
   }
 }
-
 
 // ==========
 // Taking Care of CSS 
