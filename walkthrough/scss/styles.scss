@@ -1,4 +1,5 @@
 @import "normalize";
+@import "breakpoint";
 @import "susy";
 
 @mixin cf {
@@ -9,9 +10,15 @@
   }
 }
 
-$susy: (columns: 16, container: 1140px, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 8, container: 1170px, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
+
+// ==========
+// Variables
+// ==========
+$tablet: 600px;
+$desktop: 980px;
 
 // ==========
 // Layouts
@@ -19,6 +26,17 @@ $susy: (columns: 16, container: 1140px, global-box-sizing: border-box, debug: (i
 
 .wrap {
   @include container;
+  padding-left: 15px;
+  padding-right: 15px;
+  // Breakpoint for tablet view
+  @include breakpoint($tablet) {
+    @include show-grid(9);
+  }
+
+  // Breakpoint for desktop view
+  @include breakpoint($desktop) {
+    @include show-grid(16);
+  }
 }
 
 .logo {
@@ -38,11 +56,11 @@ nav {
 }
 
 .content {
-  @include span(12 of 16);
+  @include span(12);
 }
 
 .sidebar {
-  @include span(4 of 16 last);
+  @include span(4 last);
 }
 
 .gallery {

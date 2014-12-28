@@ -421,16 +421,18 @@ table {
   box-sizing: border-box;
 }
 
-/* line 20, ../scss/styles.scss */
+/* line 27, ../scss/styles.scss */
 .wrap {
-  max-width: 1140px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 6.32911%;
+  background-size: 12.82051%;
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
@@ -438,19 +440,39 @@ table {
   display: block;
   clear: both;
 }
+@media (min-width: 600px) {
+  /* line 27, ../scss/styles.scss */
+  .wrap {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 11.36364%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+@media (min-width: 980px) {
+  /* line 27, ../scss/styles.scss */
+  .wrap {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 6.32911%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
 
-/* line 24, ../scss/styles.scss */
+/* line 42, ../scss/styles.scss */
 .logo {
   float: left;
   line-height: 2rem;
   font-size: 1.5rem;
 }
 
-/* line 30, ../scss/styles.scss */
+/* line 48, ../scss/styles.scss */
 nav {
   float: right;
 }
-/* line 32, ../scss/styles.scss */
+/* line 50, ../scss/styles.scss */
 nav li {
   list-style: none;
   float: left;
@@ -458,94 +480,94 @@ nav li {
   line-height: 2rem;
 }
 
-/* line 40, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 .content {
-  width: 74.68354%;
+  width: 151.28205%;
   float: left;
-  margin-right: 1.26582%;
+  margin-right: 2.5641%;
 }
 
-/* line 44, ../scss/styles.scss */
+/* line 62, ../scss/styles.scss */
 .sidebar {
-  width: 24.05063%;
+  width: 48.71795%;
   float: right;
   margin-right: 0;
 }
 
-/* line 5, ../scss/styles.scss */
+/* line 6, ../scss/styles.scss */
 .gallery:after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* line 60, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 .gallery {
   padding: 0 8.47458%;
 }
 
-/* line 67, ../scss/styles.scss */
+/* line 85, ../scss/styles.scss */
 .gallery__item {
   width: 18.36735%;
   float: left;
   margin-right: 2.04082%;
   margin-bottom: 2.04082%;
 }
-/* line 70, ../scss/styles.scss */
+/* line 88, ../scss/styles.scss */
 .gallery__item:nth-child(5n) {
   float: right;
   margin-right: 0;
 }
 
-/* line 81, ../scss/styles.scss */
+/* line 99, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 87, ../scss/styles.scss */
+/* line 105, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 92, ../scss/styles.scss */
+/* line 110, ../scss/styles.scss */
 li {
   list-style: none;
 }
 
-/* line 96, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 101, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 106, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 112, ../scss/styles.scss */
+/* line 130, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 118, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 122, ../scss/styles.scss */
+/* line 140, ../scss/styles.scss */
 .sidebar a {
   color: #666;
   padding-left: 1rem;
@@ -553,12 +575,12 @@ img {
   text-decoration: none;
 }
 
-/* line 130, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 134, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }
