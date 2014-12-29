@@ -114,6 +114,16 @@ nav {
   }
 }
 
+.widget {
+  @include gallery(4);
+  margin-bottom: gutter();
+
+  @include susy-breakpoint($desktop, 16) {
+    @include gallery(4);
+    margin-bottom: 0;
+  }
+}
+
 // ==========
 // Taking Care of CSS 
 // ==========

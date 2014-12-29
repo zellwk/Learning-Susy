@@ -554,55 +554,108 @@ nav li {
   }
 }
 
-/* line 121, ../scss/styles.scss */
+/* line 117, ../scss/styles.scss */
+.widget {
+  width: 48.71795%;
+  float: left;
+  margin-bottom: 2.5641%;
+}
+/* line 66, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+.widget:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+.widget:nth-child(2n + 2) {
+  margin-left: 51.28205%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 980px) {
+  /* line 117, ../scss/styles.scss */
+  .widget {
+    width: 24.05063%;
+    float: left;
+    margin-bottom: 0;
+  }
+  /* line 66, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .widget:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .widget:nth-child(4n + 2) {
+    margin-left: 25.31646%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .widget:nth-child(4n + 3) {
+    margin-left: 50.63291%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .widget:nth-child(4n + 4) {
+    margin-left: 75.94937%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 131, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
 }
 
-/* line 127, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 132, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 li {
   list-style: none;
 }
 
-/* line 136, ../scss/styles.scss */
+/* line 146, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 141, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 .site-header, .site-footer {
   background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 146, ../scss/styles.scss */
+/* line 156, ../scss/styles.scss */
 .site-header a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 152, ../scss/styles.scss */
+/* line 162, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   padding-bottom: 1rem;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 158, ../scss/styles.scss */
+/* line 168, ../scss/styles.scss */
 .sidebar {
   margin-top: 5vh;
   background: rgba(250, 231, 179, 0.8);
   padding-bottom: 1rem;
 }
-/* line 162, ../scss/styles.scss */
+/* line 172, ../scss/styles.scss */
 .sidebar a {
   color: #666;
   padding-left: 1rem;
@@ -610,12 +663,12 @@ img {
   text-decoration: none;
 }
 
-/* line 170, ../scss/styles.scss */
+/* line 180, ../scss/styles.scss */
 .widget {
   background: rgba(240, 150, 113, 0.8);
 }
 
-/* line 174, ../scss/styles.scss */
+/* line 184, ../scss/styles.scss */
 .site-footer {
   margin-top: 5vh;
 }
