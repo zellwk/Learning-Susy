@@ -10,7 +10,7 @@
   }
 }
 
-$susy: (columns: 8, container: 1140px, gutter-position: before, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 8, container: 1140px, gutter-position: split, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
@@ -23,11 +23,11 @@ $susy: (columns: 8, container: 1140px, gutter-position: before, global-box-sizin
 }
 
 .content {
-  @include span(6 first);
+  @include span(6 nest);
 }
 
 .sidebar {
-  @include span(2);
+  @include span(2 nest );
 }
 
 .gallery {
@@ -37,9 +37,9 @@ $susy: (columns: 8, container: 1140px, gutter-position: before, global-box-sizin
 .gallery__item {
   @include cf;
   @include nested(6) {
-    @include span(2);
-    &:first-child {
-      @include first;
+    @include span(2 nest);
+    &:nth-child(3) {
+      @include span(2)
     }
   }
 }
@@ -47,12 +47,12 @@ $susy: (columns: 8, container: 1140px, gutter-position: before, global-box-sizin
 .gallery__subitem {
   @include nested(2) {
     @include span(1);
-    &:nth-child(2) {
-      @include first;
-    }
   }
 }
 
+.full {
+  @include span(full)
+}
 // ==========
 // Taking Care of CSS 
 // ==========
