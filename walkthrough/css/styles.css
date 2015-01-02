@@ -466,7 +466,7 @@ table {
   }
 }
 
-/* line 37, ../scss/styles.scss */
+/* line 38, ../scss/styles.scss */
 .sidebar2 {
   width: 47.36842%;
   float: left;
@@ -474,7 +474,7 @@ table {
   margin-right: -100%;
 }
 @media (min-width: 960px) {
-  /* line 37, ../scss/styles.scss */
+  /* line 38, ../scss/styles.scss */
   .sidebar2 {
     width: 15.25424%;
     float: left;
@@ -484,7 +484,7 @@ table {
 }
 
 @media (min-width: 960px) {
-  /* line 45, ../scss/styles.scss */
+  /* line 46, ../scss/styles.scss */
   .content {
     width: 66.10169%;
     float: left;
@@ -493,33 +493,33 @@ table {
   }
 }
 
-/* line 56, ../scss/styles.scss */
+/* line 57, ../scss/styles.scss */
 .content {
   margin-top: 5vh;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 60, ../scss/styles.scss */
+/* line 61, ../scss/styles.scss */
 .content-2 {
   margin-top: 5vh;
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 65, ../scss/styles.scss */
+/* line 66, ../scss/styles.scss */
 .sidebar2 {
   margin-top: 5vh;
   margin-bottom: 5vh;
   background: rgba(250, 231, 179, 0.8);
 }
 
-/* line 71, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .sidebar1 {
   margin-top: 5vh;
   margin-bottom: 5vh;
   background: rgba(120, 122, 222, 0.8);
 }
 
-/* line 77, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 h2 {
   padding: 2.5vh 0;
   text-align: center;

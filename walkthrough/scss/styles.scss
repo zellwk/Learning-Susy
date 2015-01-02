@@ -10,7 +10,7 @@
   }
 }
 
-$susy: (columns: 4, container: 1140px, output: isolate, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 4, container: 1140px, output: float, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
@@ -27,24 +27,25 @@ $susy: (columns: 4, container: 1140px, output: isolate, global-box-sizing: borde
 }
 
 .sidebar1 {
-  @include span(2 first);
+  
+  @include span(isolate 2 first);
 
   @include susy-breakpoint(960px, 12) {
-    @include span(2 first);
+    @include span(isolate 2 first);
   }
 }
 
 .sidebar2 {
-  @include span(2 last);
+  @include span(isolate 2 last);
 
   @include susy-breakpoint(960px, 12) {
-    @include span(2 last);
+    @include span(isolate 2 last);
   }
 }
 
 .content {
   @include susy-breakpoint(960px, 12) {
-    @include span(8 at 3);
+    @include span(isolate 8 at 3);
   }
 }
 
