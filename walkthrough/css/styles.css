@@ -443,14 +443,14 @@ table {
 .content {
   width: 74.35897%;
   float: left;
-  margin-right: 2.5641%;
+  margin-left: 0;
 }
 
 /* line 29, ../scss/styles.scss */
 .sidebar {
   width: 23.07692%;
-  float: right;
-  margin-right: 0;
+  float: left;
+  margin-left: 2.5641%;
 }
 
 /* line 6, ../scss/styles.scss */
@@ -464,7 +464,7 @@ table {
 .gallery__item {
   width: 31.03448%;
   float: left;
-  margin-right: 3.44828%;
+  margin-left: 3.44828%;
 }
 /* line 6, ../scss/styles.scss */
 .gallery__item:after {
@@ -473,21 +473,19 @@ table {
   display: table;
 }
 /* line 41, ../scss/styles.scss */
-.gallery__item:last-child {
-  float: right;
-  margin-right: 0;
+.gallery__item:first-child {
+  margin-left: 0;
 }
 
 /* line 47, ../scss/styles.scss */
 .gallery__subitem {
   width: 44.44444%;
   float: left;
-  margin-right: 11.11111%;
+  margin-left: 11.11111%;
 }
 /* line 50, ../scss/styles.scss */
-.gallery__subitem:last-child {
-  float: right;
-  margin-right: 0;
+.gallery__subitem:nth-child(2) {
+  margin-left: 0;
 }
 
 /* line 60, ../scss/styles.scss */

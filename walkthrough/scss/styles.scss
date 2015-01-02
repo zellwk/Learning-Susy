@@ -10,7 +10,7 @@
   }
 }
 
-$susy: (columns: 8, container: 1140px, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 8, container: 1140px, gutter-position: before, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
@@ -23,11 +23,11 @@ $susy: (columns: 8, container: 1140px, global-box-sizing: border-box, debug: (im
 }
 
 .content {
-  @include span(6);
+  @include span(6 first);
 }
 
 .sidebar {
-  @include span(2 last);
+  @include span(2);
 }
 
 .gallery {
@@ -38,8 +38,8 @@ $susy: (columns: 8, container: 1140px, global-box-sizing: border-box, debug: (im
   @include cf;
   @include nested(6) {
     @include span(2);
-    &:last-child {
-      @include last;
+    &:first-child {
+      @include first;
     }
   }
 }
@@ -47,8 +47,8 @@ $susy: (columns: 8, container: 1140px, global-box-sizing: border-box, debug: (im
 .gallery__subitem {
   @include nested(2) {
     @include span(1);
-    &:last-child {
-      @include last;
+    &:nth-child(2) {
+      @include first;
     }
   }
 }
