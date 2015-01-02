@@ -19,35 +19,38 @@ $susy: (columns: 4, container: 1140px, output: float, global-box-sizing: border-
 // ==========
 
 .wrap {
-  @include container();
-
+  @include container;
   @include susy-breakpoint(960px, 12) {
-    @include show-grid();
+    @include show-grid;
   }
 }
 
 .sidebar1 {
-  
-  @include span(isolate 2 first);
-
+  width: span(2);
+  @include isolate(first);
   @include susy-breakpoint(960px, 12) {
-    @include span(isolate 2 first);
+    width: span(2);
+    @include isolate(first);
   }
 }
 
 .sidebar2 {
-  @include span(isolate 2 last);
-
+  width: span(2);
+  @include isolate(3);
   @include susy-breakpoint(960px, 12) {
-    @include span(isolate 2 last);
+    width: span(2);
+    @include isolate(11);
   }
 }
 
 .content {
   @include susy-breakpoint(960px, 12) {
-    @include span(isolate 8 at 3);
+    width: span(8);
+    @include isolate(3);
   }
 }
+
+
 
 // ==========
 // Taking Care of CSS 
@@ -58,6 +61,7 @@ $susy: (columns: 4, container: 1140px, output: float, global-box-sizing: border-
   margin-top: 5vh;
   background: rgba(113, 218, 210, 0.8);
 }
+
 .content-2 {
   margin-top: 5vh;
   background: rgba(113, 218, 210, 0.8);
@@ -72,7 +76,7 @@ $susy: (columns: 4, container: 1140px, output: float, global-box-sizing: border-
 .sidebar1 {
   margin-top: 5vh;
   margin-bottom: 5vh;
-  background: rgba(120, 122,222, 0.8);
+  background: rgba(120, 122, 222, 0.8);
 }
 
 h2 {
