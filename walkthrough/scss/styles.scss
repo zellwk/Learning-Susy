@@ -10,7 +10,7 @@
   }
 }
 
-$susy: (columns: 8, container: 1140px, gutter-position: split, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 8, container: 1140px, gutter-position: inside, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
