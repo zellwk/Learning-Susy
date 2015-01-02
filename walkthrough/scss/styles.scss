@@ -10,7 +10,7 @@
   }
 }
 
-$susy: (columns: 8, container: 1140px, gutter-position: inside, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 4, container: 1140px, output: isolate, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
@@ -19,78 +19,63 @@ $susy: (columns: 8, container: 1140px, gutter-position: inside, global-box-sizin
 // ==========
 
 .wrap {
-  @include container;
+  @include container();
+
+  @include susy-breakpoint(960px, 12) {
+    @include show-grid();
+  }
+}
+
+.sidebar1 {
+  @include span(2 first);
+
+  @include susy-breakpoint(960px, 12) {
+    @include span(2 first);
+  }
+}
+
+.sidebar2 {
+  @include span(2 last);
+
+  @include susy-breakpoint(960px, 12) {
+    @include span(2 last);
+  }
 }
 
 .content {
-  @include span(6 nest);
-}
-
-.sidebar {
-  @include span(2 nest );
-}
-
-.gallery {
-  @include cf;
-}
-
-.gallery__item {
-  @include cf;
-  @include nested(6) {
-    @include span(2 nest);
-    &:nth-child(3) {
-      @include span(2)
-    }
+  @include susy-breakpoint(960px, 12) {
+    @include span(8 at 3);
   }
 }
 
-.gallery__subitem {
-  @include nested(2) {
-    @include span(1);
-  }
-}
-
-.full {
-  @include span(full)
-}
 // ==========
 // Taking Care of CSS 
 // ==========
 
+// Scss. Taking Care of CSS
 .content {
-  margin-top: 10vh;
-  background: rgba(113, 218, 210, 0.5);
+  margin-top: 5vh;
+  background: rgba(113, 218, 210, 0.8);
+}
+.content-2 {
+  margin-top: 5vh;
+  background: rgba(113, 218, 210, 0.8);
 }
 
-.sidebar {
-  margin-top: 10vh;
-  height: 40vh;
+.sidebar2 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   background: rgba(250, 231, 179, 0.8);
 }
 
-.gallery__item:nth-child(odd) {
-  background: rgba(244, 49, 11, 0.5);
-}
-
-.gallery__item:nth-child(even) {
-  background: rgba(250, 231, 179, 0.5);
-}
-
-.gallery__subitem:nth-child(odd) {
-  background: rgba(20, 231, 179, 0.5);
-}
-
-.gallery__subitem:nth-child(even) {
-  background: rgba(124, 11, 19, 0.5);
-}
-
-.full {
-  margin-top: 1rem;
-  background: rgba(123, 222, 22, 0.5);
+.sidebar1 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background: rgba(120, 122,222, 0.8);
 }
 
 h2 {
-  padding: 1rem 0;
+  padding: 2.5vh 0;
   text-align: center;
   color: #555;
 }
