@@ -10,15 +10,9 @@
   }
 }
 
-$susy: (columns: 8, container: 1170px, global-box-sizing: border-box, debug: (image: show));
+$susy: (columns: 8, container: 1140px, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
-
-// ==========
-// Variables
-// ==========
-$tablet: 600px;
-$desktop: 980px;
 
 // ==========
 // Layouts
@@ -26,101 +20,36 @@ $desktop: 980px;
 
 .wrap {
   @include container;
-  padding-left: 15px;
-  padding-right: 15px;
-  // Breakpoint for tablet view
-  @include breakpoint($tablet) {
-    @include show-grid(9);
-  }
-
-  // Breakpoint for desktop view
-  @include breakpoint($desktop) {
-    @include show-grid(16);
-  }
-}
-
-.logo {
-  float: left;
-  line-height: 2rem;
-  font-size: 1.5rem;
-}
-
-nav {
-  float: right;
-  li {
-    list-style: none;
-    float: left;
-    margin-left: 1em;
-    line-height: 2rem;
-  }
 }
 
 .content {
-  @include susy-breakpoint($desktop, 16) {
-    @include span(12);
-  }
+  @include span(6);
 }
 
 .sidebar {
-  @include susy-breakpoint($desktop, 16) {
-    @include span(4 last);
-  }
+  @include span(2 last);
 }
 
 .gallery {
   @include cf;
-  @include susy-breakpoint($desktop, 12) {
-    // Method 1 
-    // width: span(10 of 12);
-    // margin-left: auto;
-    // margin-right: auto;
-    // Or alternatively: 
-    // margin-left: span(1 wide of 12);
-    // margin-left: span(1 of 12) + gutter(12)
-    // 
-    // Method 2
-    padding: 0 span(1 wide of 12);
-    // OR 
-    // padding: 0 span(1 of 12) + gutter(12);
-  }
 }
 
 .gallery__item {
-  // Constrain span to only mobile
-  @include susy-breakpoint(max-width $tablet, 8) {
-    @include span(4);
-    margin-bottom: gutter();
-    &:nth-child(2n) {
-      @include last;
-    }
-  }
-
-  // Constrain span to only tablet
-  @include susy-breakpoint($tablet $desktop, 9) {
-    @include span(3);
-    margin-bottom: gutter();
-    &:nth-child(3n) {
-      @include last;
-    }
-  }
-
-  // Constrain span to only desktop
-  @include susy-breakpoint($desktop, 10) {
+  @include cf;
+  @include nested(6) {
     @include span(2);
-    margin-bottom: gutter();
-    &:nth-child(5n) {
+    &:last-child {
       @include last;
     }
   }
 }
 
-.widget {
-  @include gallery(4);
-  margin-bottom: gutter();
-
-  @include susy-breakpoint($desktop, 16) {
-    @include gallery(4);
-    margin-bottom: 0;
+.gallery__subitem {
+  @include nested(2) {
+    @include span(1);
+    &:last-child {
+      @include last;
+    }
   }
 }
 
@@ -128,59 +57,40 @@ nav {
 // Taking Care of CSS 
 // ==========
 
+.content {
+  margin-top: 10vh;
+  background: rgba(113, 218, 210, 0.5);
+}
+
+.sidebar {
+  margin-top: 10vh;
+  height: 40vh;
+  background: rgba(250, 231, 179, 0.8);
+}
+
+.gallery__item:nth-child(odd) {
+  background: rgba(244, 49, 11, 0.5);
+}
+
+.gallery__item:nth-child(even) {
+  background: rgba(250, 231, 179, 0.5);
+}
+
+.gallery__subitem:nth-child(odd) {
+  background: rgba(20, 231, 179, 0.5);
+}
+
+.gallery__subitem:nth-child(even) {
+  background: rgba(124, 11, 19, 0.5);
+}
+
+.full {
+  margin-top: 1rem;
+  background: rgba(123, 222, 22, 0.5);
+}
+
 h2 {
   padding: 1rem 0;
   text-align: center;
   color: #555;
-}
-
-ul, ol {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.site-header, .site-footer {
-  background: rgba(234, 159, 195, 0.8);
-}
-
-.site-header {
-  a {
-    color: #555;
-    text-decoration: none;
-  }
-}
-
-.content {
-  margin-top: 5vh;
-  padding-bottom: 1rem;
-  background: rgba(113, 218, 210, 0.8);
-}
-
-.sidebar {
-  margin-top: 5vh;
-  background: rgba(250, 231, 179, 0.8);
-  padding-bottom: 1rem;
-  a {
-    color: #666;
-    padding-left: 1rem;
-    line-height: 2;
-    text-decoration: none;
-  }
-}
-
-.widget {
-  background: rgba(240, 150, 113, 0.8);
-}
-
-.site-footer {
-  margin-top: 5vh;
 }
