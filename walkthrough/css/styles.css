@@ -428,7 +428,7 @@ table {
   box-sizing: border-box;
 }
 
-/* line 48, ../scss/styles.scss */
+/* line 38, ../scss/styles.scss */
 .wrap {
   max-width: 340.49988px;
   margin-left: auto;
@@ -445,7 +445,7 @@ table {
   clear: both;
 }
 @media (min-width: 530px) {
-  /* line 48, ../scss/styles.scss */
+  /* line 38, ../scss/styles.scss */
   .wrap {
     max-width: 100%;
     background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 8.90355%, transparent 8.90355%, transparent 11.12943%, rgba(102, 102, 255, 0.25) 11.12943%, rgba(179, 179, 255, 0.25) 25.63892%, transparent 25.63892%, transparent 27.8648%, rgba(102, 102, 255, 0.25) 27.8648%, rgba(179, 179, 255, 0.25) 88.87057%, transparent 88.87057%, transparent 91.09645%, rgba(102, 102, 255, 0.25) 91.09645%, rgba(179, 179, 255, 0.25));
@@ -455,7 +455,7 @@ table {
   }
 }
 @media (min-width: 700px) {
-  /* line 48, ../scss/styles.scss */
+  /* line 38, ../scss/styles.scss */
   .wrap {
     background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 27.58401%, transparent 27.58401%, transparent 29.21686%, rgba(102, 102, 255, 0.25) 29.21686%, rgba(179, 179, 255, 0.25) 35.74825%, transparent 35.74825%, transparent 37.3811%, rgba(102, 102, 255, 0.25) 37.3811%, rgba(179, 179, 255, 0.25) 53.67789%, transparent 53.67789%, transparent 55.31074%, rgba(102, 102, 255, 0.25) 55.31074%, rgba(179, 179, 255, 0.25) 81.68991%, transparent 81.68991%, transparent 83.32275%, rgba(102, 102, 255, 0.25) 83.32275%, rgba(179, 179, 255, 0.25));
     background-origin: content-box;
@@ -471,7 +471,7 @@ table {
   display: table;
 }
 @media (min-width: 530px) {
-  /* line 60, ../scss/styles.scss */
+  /* line 50, ../scss/styles.scss */
   .content {
     width: 77.74113%;
     float: left;
@@ -481,7 +481,7 @@ table {
   }
 }
 @media (min-width: 700px) {
-  /* line 60, ../scss/styles.scss */
+  /* line 50, ../scss/styles.scss */
   .content {
     width: 52.47304%;
     float: left;
@@ -490,7 +490,7 @@ table {
   }
 }
 
-/* line 72, ../scss/styles.scss */
+/* line 62, ../scss/styles.scss */
 .content__left,
 .content__right {
   clear: both;
@@ -500,7 +500,7 @@ table {
   margin-right: -100%;
 }
 @media (min-width: 530px) {
-  /* line 72, ../scss/styles.scss */
+  /* line 62, ../scss/styles.scss */
   .content__left,
   .content__right {
     width: 78.47295%;
@@ -510,7 +510,7 @@ table {
   }
 }
 @media (min-width: 700px) {
-  /* line 72, ../scss/styles.scss */
+  /* line 62, ../scss/styles.scss */
   .content__left,
   .content__right {
     width: 84.44109%;
@@ -520,8 +520,26 @@ table {
   }
 }
 
+@media (min-width: 1600px) {
+  /* line 81, ../scss/styles.scss */
+  .content__left {
+    width: 31.05746%;
+    float: left;
+    margin-left: 15.55891%;
+    margin-right: -100%;
+  }
+
+  /* line 84, ../scss/styles.scss */
+  .content__right {
+    clear: none;
+    width: 50.27185%;
+    float: left;
+    margin-left: 49.72815%;
+    margin-right: -100%;
+  }
+}
 @media (max-width: 529px) {
-  /* line 91, ../scss/styles.scss */
+  /* line 93, ../scss/styles.scss */
   .intro .content__left, .intro .content__right {
     width: 100%;
     float: left;
@@ -530,7 +548,7 @@ table {
   }
 }
 
-/* line 102, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 body {
   font-family: 'Chaparral Pro';
   color: rgba(0, 0, 0, 0.75);
@@ -538,13 +556,13 @@ body {
   padding: 14.723624851955172% 0;
 }
 
-/* line 109, ../scss/styles.scss */
+/* line 111, ../scss/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0;
 }
 
-/* line 114, ../scss/styles.scss */
+/* line 116, ../scss/styles.scss */
 h1 {
   font-size: 7.5vw;
   font-style: italic;
@@ -552,13 +570,13 @@ h1 {
   margin-bottom: 1ex;
 }
 
-/* line 121, ../scss/styles.scss */
+/* line 123, ../scss/styles.scss */
 h2 {
   font-size: 3ex;
   margin-bottom: 2ex;
 }
 
-/* line 126, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 h3 {
   text-transform: uppercase;
   letter-spacing: 0.1em;

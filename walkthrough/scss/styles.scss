@@ -23,21 +23,11 @@ $bp-med: 530px;
 $bp-large: 700px;
 $bp-xlarge: 1600px;
 
-$small: (
-  columns: 1 6.85714,
-  gutter: 10 / 42,
-  column-width: 42px
-  );
+$small: (columns: 1 6.85714, gutter: 10 / 42, column-width: 42px);
 
-$med: (
-  columns: 1 1.62963 6.85185 1,
-  gutter: 12 / 54
-  );
+$med: (columns: 1 1.62963 6.85185 1, gutter: 12 / 54);
 
-$large: (
-  columns: 4.2233 1 2.49515 4.03883 2.5534,
-  gutter: 32 / 103
-  );
+$large: (columns: 4.2233 1 2.49515 4.03883 2.5534, gutter: 32 / 103);
 
 // Global Border Box
 @include border-box-sizing;
@@ -73,7 +63,6 @@ $large: (
 .content__right {
   clear: both;
   @include span(1 last);
-
   @include breakpoint($bp-med) {
     @include nested(2 of map-get($med, columns) at 2) {
       @include span(1 last);
@@ -86,6 +75,19 @@ $large: (
     }
   }
 }
+
+@include breakpoint($bp-xlarge) {
+  @include nested(3 of map-get($large, columns) at 2) {
+    .content__left {
+      @include span(1 at 2);
+    }
+    .content__right {
+      clear: none;
+      @include span(1 last);
+    }
+  }
+}
+
 
 .intro {
   .content__left, .content__right {
