@@ -10,7 +10,8 @@
   }
 }
 
-$susy: (columns: 4, container: 1140px, output: float, global-box-sizing: border-box, debug: (image: show));
+// Global Settings
+$susy: (output: isolate, global-box-sizing: border-box, debug: (image: show));
 
 @include border-box-sizing;
 
@@ -18,69 +19,75 @@ $susy: (columns: 4, container: 1140px, output: float, global-box-sizing: border-
 // Layouts
 // ==========
 
+$bp-med: 530px;
+$bp-large: 700px;
+$bp-xlarge: 1600px;
+
+$small: (
+  columns: 1 6.85714,
+  gutter: 10 / 42,
+  column-width: 42px
+  );
+
+$med: (
+  columns: 1 1.62963 6.85185 1,
+  gutter: 12 / 54
+  );
+
+$large: (
+  columns: 4.2233 1 2.49515 4.03883 2.5534,
+  gutter: 32 / 103
+  );
+
+// Global Border Box
+@include border-box-sizing;
+
+// Updating Global Susy Settings with $small map initially
+@include layout($small);
+
 .wrap {
   @include container;
-  @include susy-breakpoint(960px, 12) {
+  @include susy-breakpoint($bp-med, $med) {
+    max-width: 100%;
+    @include show-grid;
+  }
+
+  @include susy-breakpoint($bp-large, $large) {
     @include show-grid;
   }
 }
 
-.sidebar1 {
-  width: span(2);
-  @include isolate(first);
-  @include susy-breakpoint(960px, 12) {
-    width: span(2);
-    @include isolate(first);
-  }
-}
-
-.sidebar2 {
-  width: span(2);
-  @include isolate(3);
-  @include susy-breakpoint(960px, 12) {
-    width: span(2);
-    @include isolate(11);
-  }
-}
-
-.content {
-  @include susy-breakpoint(960px, 12) {
-    width: span(8);
-    @include isolate(3);
-  }
-}
-
-
 
 // ==========
-// Taking Care of CSS 
+// Taking care of CSS
 // ==========
 
-// Scss. Taking Care of CSS
-.content {
-  margin-top: 5vh;
-  background: rgba(113, 218, 210, 0.8);
+body {
+  font-family: 'Chaparral Pro';
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.75;
+  padding: 14.723624851955172% 0;
 }
 
-.content-2 {
-  margin-top: 5vh;
-  background: rgba(113, 218, 210, 0.8);
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
 }
 
-.sidebar2 {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  background: rgba(250, 231, 179, 0.8);
-}
-
-.sidebar1 {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  background: rgba(120, 122, 222, 0.8);
+h1 {
+  font-size: 7.5vw;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 1ex;
 }
 
 h2 {
-  padding: 2.5vh 0;
-  text-align: center;
-  color: #555;
+  font-size: 3ex;
+  margin-bottom: 2ex;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 8ex 0 0;
 }
