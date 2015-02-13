@@ -47,16 +47,25 @@ $large: (
 
 .wrap {
   @include container;
-  @include susy-breakpoint($bp-med, $med) {
-    max-width: 100%;
-    @include show-grid;
-  }
-
-  @include susy-breakpoint($bp-large, $large) {
-    @include show-grid;
-  }
 }
 
+.content {
+  @include cf;
+}
+
+.content__left,
+.content__right {
+  clear: both;
+  @include span(1 last);
+}
+
+.intro {
+  .content__left, .content__right {
+    @include breakpoint(max-width $bp-med - 1) {
+      @include span(full);
+    }
+  }
+}
 
 // ==========
 // Taking care of CSS
