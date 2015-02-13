@@ -454,6 +454,15 @@ table {
     background-position: left top;
   }
 }
+@media (min-width: 700px) {
+  /* line 48, ../scss/styles.scss */
+  .wrap {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 27.58401%, transparent 27.58401%, transparent 29.21686%, rgba(102, 102, 255, 0.25) 29.21686%, rgba(179, 179, 255, 0.25) 35.74825%, transparent 35.74825%, transparent 37.3811%, rgba(102, 102, 255, 0.25) 37.3811%, rgba(179, 179, 255, 0.25) 53.67789%, transparent 53.67789%, transparent 55.31074%, rgba(102, 102, 255, 0.25) 55.31074%, rgba(179, 179, 255, 0.25) 81.68991%, transparent 81.68991%, transparent 83.32275%, rgba(102, 102, 255, 0.25) 83.32275%, rgba(179, 179, 255, 0.25));
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
 
 /* line 6, ../scss/styles.scss */
 .content:after {
@@ -462,7 +471,7 @@ table {
   display: table;
 }
 @media (min-width: 530px) {
-  /* line 56, ../scss/styles.scss */
+  /* line 60, ../scss/styles.scss */
   .content {
     width: 77.74113%;
     float: left;
@@ -471,8 +480,17 @@ table {
     clear: both;
   }
 }
+@media (min-width: 700px) {
+  /* line 60, ../scss/styles.scss */
+  .content {
+    width: 52.47304%;
+    float: left;
+    margin-left: 29.21686%;
+    margin-right: -100%;
+  }
+}
 
-/* line 64, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .content__left,
 .content__right {
   clear: both;
@@ -482,7 +500,7 @@ table {
   margin-right: -100%;
 }
 @media (min-width: 530px) {
-  /* line 64, ../scss/styles.scss */
+  /* line 72, ../scss/styles.scss */
   .content__left,
   .content__right {
     width: 78.47295%;
@@ -491,9 +509,19 @@ table {
     margin-right: -100%;
   }
 }
+@media (min-width: 700px) {
+  /* line 72, ../scss/styles.scss */
+  .content__left,
+  .content__right {
+    width: 84.44109%;
+    float: left;
+    margin-left: 15.55891%;
+    margin-right: -100%;
+  }
+}
 
 @media (max-width: 529px) {
-  /* line 77, ../scss/styles.scss */
+  /* line 91, ../scss/styles.scss */
   .intro .content__left, .intro .content__right {
     width: 100%;
     float: left;
@@ -502,7 +530,7 @@ table {
   }
 }
 
-/* line 88, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
 body {
   font-family: 'Chaparral Pro';
   color: rgba(0, 0, 0, 0.75);
@@ -510,13 +538,13 @@ body {
   padding: 14.723624851955172% 0;
 }
 
-/* line 95, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0;
 }
 
-/* line 100, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 h1 {
   font-size: 7.5vw;
   font-style: italic;
@@ -524,13 +552,13 @@ h1 {
   margin-bottom: 1ex;
 }
 
-/* line 107, ../scss/styles.scss */
+/* line 121, ../scss/styles.scss */
 h2 {
   font-size: 3ex;
   margin-bottom: 2ex;
 }
 
-/* line 112, ../scss/styles.scss */
+/* line 126, ../scss/styles.scss */
 h3 {
   text-transform: uppercase;
   letter-spacing: 0.1em;

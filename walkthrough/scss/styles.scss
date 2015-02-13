@@ -51,6 +51,10 @@ $large: (
     max-width: 100%;
     @include show-grid;
   }
+
+  @include susy-breakpoint($bp-large, $large) {
+    @include show-grid;
+  }
 }
 
 .content {
@@ -58,6 +62,10 @@ $large: (
   @include susy-breakpoint($bp-med, $med) {
     @include span(2 at 2);
     clear: both;
+  }
+
+  @include susy-breakpoint($bp-large, $large) {
+    @include span(3 at 2);
   }
 }
 
@@ -69,6 +77,12 @@ $large: (
   @include breakpoint($bp-med) {
     @include nested(2 of map-get($med, columns) at 2) {
       @include span(1 last);
+    }
+  }
+
+  @include breakpoint($bp-large) {
+    @include nested(3 of map-get($large, columns) at 2) {
+      @include span(2 last);
     }
   }
 }
