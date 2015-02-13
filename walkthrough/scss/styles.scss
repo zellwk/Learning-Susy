@@ -47,16 +47,30 @@ $large: (
 
 .wrap {
   @include container;
+  @include susy-breakpoint($bp-med, $med) {
+    max-width: 100%;
+    @include show-grid;
+  }
 }
 
 .content {
   @include cf;
+  @include susy-breakpoint($bp-med, $med) {
+    @include span(2 at 2);
+    clear: both;
+  }
 }
 
 .content__left,
 .content__right {
   clear: both;
   @include span(1 last);
+
+  @include breakpoint($bp-med) {
+    @include nested(2 of map-get($med, columns) at 2) {
+      @include span(1 last);
+    }
+  }
 }
 
 .intro {
