@@ -11,122 +11,42 @@
 }
 
 // Global Settings
-$susy: (output: isolate, global-box-sizing: border-box, debug: (image: show));
+$susy: (
+  columns: 4,
+  column-width: 90px,
+  gutters: 15px / 90px, // or 0.166666667
+  math: static,
+  global-box-sizing: border-box,
+  debug: (image: show)
+  );
 
-@include border-box-sizing;
+@include border-box-sizing;  
 
 // ==========
 // Layouts
 // ==========
 
-$bp-med: 530px;
-$bp-large: 700px;
-$bp-xlarge: 1600px;
-
-$small: (columns: 1 6.85714, gutter: 10 / 42, column-width: 42px);
-
-$med: (columns: 1 1.62963 6.85185 1, gutter: 12 / 54);
-
-$large: (columns: 4.2233 1 2.49515 4.03883 2.5534, gutter: 32 / 103);
-
-// Global Border Box
-@include border-box-sizing;
-
-// Updating Global Susy Settings with $small map initially
-@include layout($small);
+$bp-med: 845px; 
+$bp-large: 1245px;
+$med: 8;
+$large: 12;
 
 .wrap {
   @include container;
-  @include susy-breakpoint($bp-med, $med) {
-    max-width: 100%;
-    @include show-grid;
-  }
-
-  @include susy-breakpoint($bp-large, $large) {
-    @include show-grid;
-  }
-}
-
-.content {
-  @include cf;
-  @include susy-breakpoint($bp-med, $med) {
-    @include span(2 at 2);
-    clear: both;
-  }
-
-  @include susy-breakpoint($bp-large, $large) {
-    @include span(3 at 2);
-  }
-}
-
-.content__left,
-.content__right {
-  clear: both;
-  @include span(1 last);
-  @include breakpoint($bp-med) {
-    @include nested(2 of map-get($med, columns) at 2) {
-      @include span(1 last);
-    }
-  }
-
-  @include breakpoint($bp-large) {
-    @include nested(3 of map-get($large, columns) at 2) {
-      @include span(2 last);
-    }
-  }
-}
-
-@include breakpoint($bp-xlarge) {
-  @include nested(3 of map-get($large, columns) at 2) {
-    .content__left {
-      @include span(1 at 2);
-    }
-    .content__right {
-      clear: none;
-      @include span(1 last);
-    }
-  }
-}
-
-
-.intro {
-  .content__left, .content__right {
-    @include breakpoint(max-width $bp-med - 1) {
-      @include span(full);
-    }
-  }
 }
 
 // ==========
 // Taking care of CSS
 // ==========
-
-body {
-  font-family: 'Chaparral Pro';
-  color: rgba(0, 0, 0, 0.75);
-  line-height: 1.75;
-  padding: 14.723624851955172% 0;
+.content {
+  background: rgba(113, 218, 210, 0.8);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  margin: 0;
-}
-
-h1 {
-  font-size: 7.5vw;
-  font-style: italic;
-  line-height: 1;
-  margin-bottom: 1ex;
+.sidebar1, .sidebar2 {
+  background: rgba(250, 231, 179, 0.8);
 }
 
 h2 {
-  font-size: 3ex;
-  margin-bottom: 2ex;
-}
-
-h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 8ex 0 0;
+  padding: 1rem 0;
+  text-align: center;
 }
