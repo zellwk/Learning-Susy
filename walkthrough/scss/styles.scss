@@ -32,7 +32,30 @@ $med: 8;
 $large: 12;
 
 .wrap {
-  @include container;
+  @include container; 
+  @include susy-breakpoint($bp-med, $med) {
+    width: span($med);
+    @include show-grid;
+  }
+}
+
+
+.content {
+  @include susy-breakpoint($bp-med, $med) {
+    @include span(4);
+  }
+}
+
+.sidebar1 {
+  @include susy-breakpoint($bp-med, $med) {
+    @include span(2);
+  }
+}
+
+.sidebar2 {
+  @include susy-breakpoint($bp-med, $med) {
+    @include span(2 last);
+  }
 }
 
 // ==========

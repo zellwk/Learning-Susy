@@ -438,18 +438,56 @@ table {
   display: block;
   clear: both;
 }
+@media (min-width: 845px) {
+  /* line 34, ../scss/styles.scss */
+  .wrap {
+    width: 825px;
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 85.71429%, transparent 85.71429%);
+    background-size: 105px;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
 
-/* line 41, ../scss/styles.scss */
+@media (min-width: 845px) {
+  /* line 43, ../scss/styles.scss */
+  .content {
+    width: 405px;
+    float: left;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 845px) {
+  /* line 49, ../scss/styles.scss */
+  .sidebar1 {
+    width: 195px;
+    float: left;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 845px) {
+  /* line 55, ../scss/styles.scss */
+  .sidebar2 {
+    width: 195px;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 64, ../scss/styles.scss */
 .content {
   background: rgba(113, 218, 210, 0.8);
 }
 
-/* line 45, ../scss/styles.scss */
+/* line 68, ../scss/styles.scss */
 .sidebar1, .sidebar2 {
   background: rgba(250, 231, 179, 0.8);
 }
 
-/* line 49, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 h2 {
   padding: 1rem 0;
   text-align: center;
