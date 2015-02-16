@@ -37,12 +37,18 @@ $large: 12;
     width: span($med);
     @include show-grid;
   }
+  @include susy-breakpoint($bp-large, $large) {
+    width: span($large);
+    @include show-grid;
+  }
 }
-
 
 .content {
   @include susy-breakpoint($bp-med, $med) {
     @include span(4);
+  }
+  @include susy-breakpoint($bp-large, $large) {
+    @include span(8)
   }
 }
 
@@ -50,11 +56,17 @@ $large: 12;
   @include susy-breakpoint($bp-med, $med) {
     @include span(2);
   }
+  @include susy-breakpoint($bp-large, $large) {
+    @include span(2)
+  }
 }
 
 .sidebar2 {
   @include susy-breakpoint($bp-med, $med) {
     @include span(2 last);
+  }
+  @include susy-breakpoint($bp-large, $large) {
+    @include span(2 last)
   }
 }
 
